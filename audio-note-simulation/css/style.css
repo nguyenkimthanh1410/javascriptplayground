@@ -1,0 +1,73 @@
+body {		
+	color: white;
+	width:80%;
+	margin: 0 auto;
+}
+
+ul li {
+	border: 1px solid white;
+	margin-top: 1px;
+	position: relative;
+	right: 35px;
+	padding-left: 10px;
+	list-style: none;
+	list-style-position: outside;
+}
+
+#page {
+	width: 250px;	
+	background-color: black;	
+	margin: 0 auto;
+	overflow: auto;
+	padding: 2% 8%;
+}
+.cool {
+	background-color: aqua;
+}
+.hot {
+	background-color: darkred;
+}
+.green {
+	background-color: green;
+}
+.complete {
+	background-color: gray;
+}
+.bigger {
+	font-size: 16px;
+}
+.tip {
+	color: white;
+	font-size: 16px;
+}
+.warning {
+	color: orange;
+}
+
+input[type='text'], input[type='password'] {
+	border-radius: 5px;
+}
+#note{
+	border: 1px solid red;
+	border-radius: 5px;
+	background-color: white;
+	color: blue;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.notify {
+	float: right;
+}	
+
+input[data-state='record'] {
+	background-image: url('../images/record.png');
+}
+input[data-state='stop'] {
+	background-image: url('../images/pause.png');
+}
+#buttons {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
