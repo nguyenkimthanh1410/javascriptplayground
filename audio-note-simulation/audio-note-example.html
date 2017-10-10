@@ -5,16 +5,17 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css" >
 	</head>
 	
-	<body>	
-		
+	<body>			
 		<div id="page">		
-			<h1>Recording Player</h1>
-			<h2 id="label">Audio Note</h2>
-			
-			<label for="noteName">Enter note name:</label><br />
-			<textarea id="noteName" cols='35' rows='10'></textarea> <br />
-			<!--<input type="text" id="noteName"> -->
-			<input type="button" data-state='record' id='buttons'>
+			<h1></h1><!--ListKing  logo -->
+			<h2 id="noteName">Audio Note</h2>
+			<form>
+				<label for="noteInput">Enter note name:</label><br />
+				<input type="text" id="noteInput" /><br />				
+				<div id="buttons">
+					<a data-state='record' href="">record</a>
+				</div>
+			</form>
 		</div>		
 		<script src="js/audio-note-example.js"></script>
 		

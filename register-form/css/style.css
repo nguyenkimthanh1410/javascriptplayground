@@ -41,14 +41,16 @@ h2 span {
   width: 26px;
   padding: 4px 0 0 0;
 }
+
 ul {
   background-color: #584f4d;
   border:none;
   padding: 0;
   margin: 0;
 }
+
 li {
-  background-color: #ec8b68;
+  background-color: #ec8b68; /*pink orange*/
   color: #fff;
   border-top: 1px solid #fe9772;
   border-bottom: 1px solid #9f593f;
@@ -60,6 +62,7 @@ li {
   padding-left: 1em;
   padding-top: 10px;
 }  
+
 li a {
   color: #fff;
   background-image: url('../images/icon-link.png');
@@ -71,6 +74,7 @@ li a {
 li.complete a {
   background-image: none;
 }
+
 p {
   background-color: #7f675c;
   color: #e3dfdd; 
@@ -84,15 +88,16 @@ p {
   -webkit-box-shadow: inset 1px -1px 0 0 #a5948c;
   box-shadow: inset 1px -1px 0 0 #a5948c;
 }
+
 .hot {
-  background-color: #d7666b;
+  background-color: #d7666b; /*dark rose pink*/
   color: #fff;
   text-shadow: 2px 2px 1px #914141;
   border-top: 1px solid #e99295;
   border-bottom: 1px solid #914141;
 }
 .cool {
-  background-color: #6cc0ac;
+  background-color: #6cc0ac; /*aqua*/
   color: #fff;
   text-shadow: 2px 2px 1px #3b6a5e;
   border-top: 1px solid #7ee0c9;
@@ -110,16 +115,23 @@ p {
 }
 .complete a {display:block;}
 
+
 /*Form style*/
 form {
     padding: 0 60px 65px 60px;
 }
-label {
+label, legend {
     color: #fff;
     display: block;
     margin: 10px 0 10px 0;
     font-size: 24px;
 	cursor: default;
+}
+label.inline {
+	display: inline;
+}
+label span {
+	font-size: 14px;
 }
 
 input[type='text'], input[type='password'], textarea {
@@ -162,15 +174,16 @@ textarea {
 
 select, option {
   font-size: 16px;}
-#feedback, #termsHint {
-  color: #fff;
-  background-image: url('../images/warning.png');
+
+
+.feedback, #termsHint {
+  color: #fff; 
   background-repeat: no-repeat;
   background-position: 2px 14px;
-  padding: 10px 0 0 22px;}
+  padding: 10px 0 5px 22px;}
 
-#feedback.warning {background-image: url('../images/warning.png');}
-#feedback.tip {background-image: url('../images/tip.png');}
+.feedback.warning {background-image: url('../images/warning.png');}
+.feedback.tip {background-image: url('../images/tip.png');}
 
 #packageHint {
   color: #fff;
@@ -300,6 +313,8 @@ a[data-state='record'] {
     background-image: url(../images/record.png);
 }
 a[data-state='stop'] {background-image: url('../images/pause.png');}
+
+
 
 
 /* Small screen - acts like the app would */

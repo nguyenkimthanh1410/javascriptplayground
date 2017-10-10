@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register form</title>
+		<link href="css/style.css" rel="stylesheet" type=""text/css >
+	</head>
+	
+	<body>		
+		<h1></h1> <!---Membership-->
+		<h2>Membership Sign Up</h2>
+		<div id="page">
+			<form action="register.html" method="post" id="formSignup">
+				<fieldset>
+					<legend>Login info</legend>
+					<label for="userName">User Name:</label>
+					<input type="text" id="userName" name="userName" />
+					<span id="msgUserName"></span>
+					
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" />
+					<span id="msgPassword"></span>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Short intro</legend>
+					<label>Gender: </label>
+					<input type="radio" id="male" name="gender" value="m" checked='checked'/>
+					<label  class="inline" for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="f">
+					<label  class="inline" for="female">Female</label>
+					<label><span id="msgGender"></span></label>
+					
+					<!-- Select Box -->
+					<br />				
+					<label>What membership type?</label>
+					<select name="memberType" id="memberType">
+						<option value="regular">Regular</option>
+						<option value="gold">Gold</option>
+						<option value="platium">Platium</option>
+					</select>
+					<label><span id="msgMember"></span></label>
+					
+					<!-- Multiple Select Box -->
+					<label>What kinds of book are you interested in?<!--display 3 options-->
+					<span>(You can select more than one option by holding down control on a PC
+					or Command on Mac while selecting different options.)</span>
+					</label>
+					<select name="bookGenre" id="bookGenre" size="3" multiple="multiple"> 
+						<option value="it" selected="selected">IT</option>
+						<option value="lit">Literature</option>
+						<option value="psy">Psychology</option>
+						<option value="music">Music</option>
+						<option value="social">Socialogy</option>			
+						<option value="biz">Business</option>			
+					</select>			
+					
+					<!-- Checkbox Box -->
+					<!-- name must be the same, values are different-->				
+					<label>Please select your favorite audio service</label>			
+					<input type="checkbox" name="service"
+							value="itunes" /><label class="inline">iTunes</label> <!--checked="checked" -->
+					<input type="checkbox" name="service"
+							value="lastfm" /><label class="inline">Last.fm</label>
+					<input type="checkbox" name="service"
+							value="spotify" /><label class="inline">Spotify</label>
+				
+			
+					<!--Select box -->
+					<label>What device do you listen to audio on?</label>
+					<select name="device">
+						<option value="ipod">iPod</option>
+						<option value="radio">Radio</option>
+						<option value="computer">Computer</option>
+					</select>
+					
+					<label>Tell a bit about you:</label>
+					<textarea id='shortIntro'></textarea>
+					
+					<label>Upload your photo:</label>
+					<input type="file" name="userPhoto">
+				</fieldset>
+				
+				<!-- Fieldset: Group related form control together-->
+				<fieldset>
+					<legend>Contact Details</legend>
+					<label>Email:<input type="text" name="email" id="email"/></label>
+					<label>Mobile:<input type="text" name="mobile" id="mobile" /></label>
+					<label>Telephone:<input type="text" name="telephone" id="telephone" /></label>	
+				</fieldset>	
+				
+				<input type="checkbox" id="terms" />
+				<label for="terms" class="checkbox"> Check to agree to terms &amp; conditions</label>
+				<div id="termsHint" class="warning"></div>
+			
+				<input type='submit' value='Sign Up' />
+			</form>			
+		</div>
+		
+		<script src="js/register-form.js"></script>
+	</body>
+</html>
